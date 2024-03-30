@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #162831;
+}
+
+.header {
+  margin: 30px 0 50px 0;
+}
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 156px;
+  color: white;
+}
+.header .header-container .header-container_menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: Proxima Nova;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.header .header-container .header-container_menu a:last-of-type {
+  margin-right: 0;
+}
+.header .header-container .header-container_menu a:hover {
+  color: #018ABE;
+}
+.header .header-container .header-container_button a {
+  text-decoration: none;
+  color: white;
+  background-color: #018ABE;
+  font-family: Proxima Nova;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 15px 9px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.header .header-container .header-container_button a:hover {
+  background-color: white;
+  color: #018ABE;
+}
+
+.firstsrc-container-inner {
+  margin: 0 156px 150px 156px;
+  height: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+.firstsrc-container-inner .firstsrc-container-inner_head {
+  padding-top: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.firstsrc-container-inner .firstsrc-container-inner_head p {
+  font-family: ElMessiri;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 66px;
+  margin-left: 66px;
+  color: white;
+}
+.firstsrc-container-inner .firstsrc-container-inner_head img {
+  width: 28px;
+  height: 14px;
+}
+.firstsrc-container-inner h1 {
+  color: white;
+  font-family: ElMessiri;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.sessions {
+  margin: 0 156px;
+}
+.sessions .sessions-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.sessions .sessions-title p {
+  color: white;
+  font-family: EiMessiri;
+  font-size: 42px;
+  font-weight: 700;
+  margin-left: 66px;
+  margin-right: 66px;
+}
+.sessions .sessions-title img {
+  width: 28px;
+  height: 14px;
+}
+.sessions .sessions-container {
+  display: grid;
+  grid-template-columns: 312px 286px 286px;
+  grid-template-rows: 270px 270px 270px;
+  grid-auto-columns: 1fr;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+  grid-template-areas: "sessions-1 sessions-2 sessions-2" "sessions-1 sessions-3 sessions-3" "sessions-4 sessions-4 sessions-5";
+}
+.sessions [class*=sessions-] {
+  border-radius: 10px;
+}
+.sessions [class*=sessions-] p {
+  font-family: ElMessiri;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.sessions .sessions-1 {
+  grid-area: sessions-1;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 15px 50px 50px;
+}
+.sessions .sessions-2 {
+  grid-area: sessions-2;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 15px 50px 50px;
+}
+.sessions .sessions-3 {
+  grid-area: sessions-3;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 15px 50px 50px;
+}
+.sessions .sessions-4 {
+  grid-area: sessions-4;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 15px 50px 50px;
+}
+.sessions .sessions-5 {
+  grid-area: sessions-5;
+  display: flex;
+  align-items: flex-end;
+}
+
+.reviews {
+  padding-bottom: 50px;
+}
+.reviews .reviews-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+.reviews .reviews-title p {
+  color: white;
+  font-family: EiMessiri;
+  font-size: 42px;
+  font-weight: 700;
+  margin-left: 66px;
+  margin-right: 66px;
+}
+.reviews .reviews-title img {
+  width: 28px;
+  height: 14px;
+}
+
+.reviews-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reviews-items .reviews-items_inner {
+  background-color: #018abe;
+  color: white;
+  padding: 60px;
+  border-radius: 10px;
+  font-family: Proxima Nova;
+}
+.reviews-items .reviews-items_inner h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.reviews-items .reviews-items_inner p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.reviews-items_inner:nth-child(1),
+.reviews-items_inner:nth-child(3) {
+  transform: scale(0.8);
+  opacity: 0.4;
+}
+
+.reviews-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.reviews-bar img {
+  margin-right: 20px;
+}
+
+.about .about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+.about .about-title p {
+  color: white;
+  font-family: EiMessiri;
+  font-size: 42px;
+  font-weight: 700;
+  margin-left: 66px;
+  margin-right: 66px;
+}
+.about .about-title img {
+  width: 28px;
+  height: 14px;
+}
+.about .about-container {
+  margin: 0 90px;
+  display: grid;
+  grid-template-columns: 526px 526px;
+  grid-template-rows: 400px 400px;
+  grid-auto-columns: 1fr;
+  gap: 40px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: "text-1 photo-1" "photo-2 text-2";
+}
+.about .about-container p {
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.4px;
+  text-align: left;
+  padding: 12px 0;
+}
+.about .about-container h2 {
+  font-family: Proxima Nova;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+  padding: 12px 0;
+}
+.about .text-1 {
+  grid-area: text-1;
+  color: white;
+  width: 500px;
+  height: 400px;
+}
+.about .photo-1 {
+  grid-area: photo-1;
+  width: 526px;
+  height: 400px;
+}
+.about .photo-2 {
+  grid-area: photo-2;
+  width: 526px;
+  height: 400px;
+}
+.about .text-2 {
+  grid-area: text-2;
+  color: white;
+  width: 500px;
+  height: 400px;
+  padding-left: 40px;
+}
+
+.price {
+  padding-bottom: 150px;
+}
+.price .price-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+.price .price-title p {
+  color: white;
+  font-family: EiMessiri;
+  font-size: 42px;
+  font-weight: 700;
+  margin-left: 66px;
+  margin-right: 66px;
+}
+.price .price-title img {
+  width: 28px;
+  height: 14px;
+}
+
+.price-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-content .price-content_items {
+  margin-right: 134px;
+}
+.price-content .price-content_items .price-content_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+.price-content .price-content_items .price-content_item p {
+  margin-left: 90px;
+  font-family: Ei Messiri;
+  font-size: 18px;
+  font-family: 700;
+  color: white;
+}
+.price-content .price-content_items .price-content_item div {
+  display: flex;
+  align-items: center;
+}
+.price-content .price-content_items .price-content_item div img {
+  width: 18px;
+  height: 9px;
+  margin-right: 20px;
+}
+.price-content .price-content_items .price-content_item div h3 {
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+.price-content .price-content_img p {
+  color: white;
+  font-family: Ei MEssiri;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contacts {
+  margin: 0 50px 20px 50px;
+  color: white;
+}
+.contacts h2 {
+  font-family: El Messiri;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+}
+.contacts .contacts_button a {
+  text-decoration: none;
+  color: #018ABE;
+  background-color: white;
+  font-family: Proxima Nova;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 15px 9px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.contacts .contacts_button a:hover {
+  background-color: #018ABE;
+  color: white;
+  border: solid 2px white;
+}
+.contacts .contacts-container {
+  display: grid;
+  grid-template-columns: 720px 392px;
+  grid-template-rows: 290px 290px;
+  grid-auto-columns: 1fr;
+  gap: 24px 48px;
+  grid-auto-flow: row;
+  grid-template-areas: "karta contact-1" "karta contact-2";
+}
+.contacts .karta {
+  grid-area: karta;
+  border-radius: 10px;
+}
+.contacts .contact-1 {
+  grid-area: contact-1;
+  background-color: rgb(1, 138, 190);
+  border-radius: 10px;
+  padding: 35px 45px;
+  width: 392px;
+  height: 290px;
+}
+.contacts .contact-2 {
+  grid-area: contact-2;
+  background-color: rgb(1, 138, 190);
+  border-radius: 10px;
+  padding: 35px 45px;
+  width: 392px;
+  height: 290px;
+}
+.contacts .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 15px 0;
+}
+.contacts .contact_text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 40px;
+}
+.contacts .contact_text img {
+  width: 20px;
+}
+.contacts .contact_text p {
+  font-family: Proxima Nova;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  text-align: left;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ElMessiri";
+  src: url("../fonts/ElMessiri-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@media screen and (max-width: 1120px) {
+  .header .header-container {
+    margin: 15px 50px;
+  }
+  .sessions {
+    margin: 0 30px;
+  }
+  .about .about-container {
+    margin: 0 30px;
+    grid-template-columns: 500px 500px;
+    gap: 40px 5px;
+  }
+  .about .text-1 {
+    width: 450px;
+  }
+  .about .photo-1 {
+    width: 450px;
+  }
+  .about .photo-2 {
+    width: 450px;
+  }
+  .about .text-2 {
+    padding-left: 5px;
+    width: 450px;
+  }
+  .price-content_items {
+    margin: 0 50px;
+  }
+  .price-content_img img {
+    width: 450px;
+    height: 320px;
+  }
+  .contacts {
+    margin: 0 20px 20px 20px;
+  }
+  .contacts .contacts-container {
+    grid-template-columns: 520px 392px;
+  }
+}/*# sourceMappingURL=main.css.map */

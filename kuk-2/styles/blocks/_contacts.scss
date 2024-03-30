@@ -1,0 +1,93 @@
+.contacts {
+    margin: 0 50px 20px 50px;
+    color: white;
+
+    h2 {
+        font-family: El Messiri;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33.6px;
+        text-align: left;
+    }
+
+    .contacts_button a{
+        text-decoration: none;
+        color: #018ABE;
+        background-color: white;
+        font-family: Proxima Nova;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 9px 15px 9px 15px;
+        border-radius: 3px;
+        transition: all .3s ease;
+    }
+
+    .contacts_button a:hover {
+        background-color: #018ABE;
+        color: white;
+        border: solid 2px white;
+    }
+
+    .contacts-container {  
+        display: grid;
+        grid-template-columns: 720px 392px;
+        grid-template-rows: 290px 290px;
+        grid-auto-columns: 1fr;
+        gap: 24px 48px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "karta contact-1"
+          "karta contact-2";
+      }
+      
+      .karta { 
+        grid-area: karta;
+        border-radius: 10px; 
+    }
+      
+      .contact-1 { 
+        grid-area: contact-1;
+        background-color: rgba(1, 138, 190, 1);
+        border-radius: 10px;
+        padding: 35px 45px;
+        width: 392px;
+        height: 290px;
+    }
+      
+      .contact-2 { 
+        grid-area: contact-2;
+        background-color: rgba(1, 138, 190, 1); 
+        border-radius: 10px;
+        padding: 35px 45px;
+        width: 392px;
+        height: 290px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 15px 0;
+    }
+
+    .contact_text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 40px;
+
+        img {
+            width: 20px;
+        }
+
+        p {
+            font-family: Proxima Nova;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            text-align: left;
+
+        }
+    }
+}

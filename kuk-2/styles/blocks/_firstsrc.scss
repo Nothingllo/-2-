@@ -1,0 +1,36 @@
+.firstsrc-container-inner {
+    margin: 0 156px 150px 156px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+
+    .firstsrc-container-inner_head {
+        padding-top: 136px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .firstsrc-container-inner_head p {
+        font-family: ElMessiri;
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 66px;
+        margin-left: 66px;
+        color: white;
+    }
+
+    .firstsrc-container-inner_head img {
+        width: 28px;
+        height: 14px;
+    }
+
+    h1 {
+        color: white;
+        font-family: ElMessiri;
+        font-size: 64px;
+        font-weight: 700;
+    }
+}
+

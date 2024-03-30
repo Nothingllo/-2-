@@ -1,0 +1,82 @@
+.about {
+    .about-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 90px;
+        margin-top: 90px;
+    }
+
+    .about-title p {
+        color: white;
+        font-family: EiMessiri;
+        font-size: 42px;
+        font-weight: 700;
+        margin-left: 66px;
+        margin-right: 66px;
+    }
+
+    .about-title img {
+        width: 28px;
+        height: 14px;
+    }
+
+    .about-container { 
+            margin: 0 90px;
+            display: grid;
+            grid-template-columns: 526px 526px;
+            grid-template-rows: 400px 400px;
+            grid-auto-columns: 1fr;
+            gap: 40px 25px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "text-1 photo-1"
+              "photo-2 text-2";
+
+            p {
+                font-family: Proxima Nova;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 22.4px;
+                text-align: left;
+                padding: 12px 0;
+            }
+
+            h2 {
+                font-family: Proxima Nova;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 33.6px;
+                text-align: left;
+                padding: 12px 0;
+            }
+    }
+
+    .text-1 { 
+        grid-area: text-1; 
+        color: white;
+        width: 500px;
+        height: 400px;
+    }
+          
+    .photo-1 { 
+        grid-area: photo-1;
+        width: 526px;
+        height: 400px;
+    }
+    
+    .photo-2 { 
+        grid-area: photo-2;
+        width: 526px;
+        height: 400px;
+    }
+    
+    .text-2 { 
+        grid-area: text-2;
+        color: white;
+        width: 500px;
+        height: 400px;
+        padding-left: 40px;
+    }
+ 
+}

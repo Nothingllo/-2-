@@ -1,0 +1,84 @@
+.sessions {
+  margin: 0 156px;
+    .sessions-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 90px;
+    }
+
+    .sessions-title p {
+        color: white;
+        font-family: EiMessiri;
+        font-size: 42px;
+        font-weight: 700;
+        margin-left: 66px;
+        margin-right: 66px;
+    }
+
+    .sessions-title img {
+        width: 28px;
+        height: 14px;
+    }
+
+    .sessions-container {  
+        display: grid;
+        grid-template-columns: 312px 286px 286px;
+        grid-template-rows: 270px 270px 270px;
+        grid-auto-columns: 1fr;
+        gap: 24px 24px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "sessions-1 sessions-2 sessions-2"
+          "sessions-1 sessions-3 sessions-3"
+          "sessions-4 sessions-4 sessions-5";
+      }
+      
+      [class*="sessions-"] {
+        border-radius: 10px;
+
+        p {
+            font-family: ElMessiri;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+      }
+
+      .sessions-1 { 
+        grid-area: sessions-1;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 15px 50px 50px;
+        
+    }
+      
+      .sessions-2 { 
+        grid-area: sessions-2;
+        display: flex;
+        align-items: flex-end; 
+        padding: 0 15px 50px 50px;
+    }
+      
+      .sessions-3 { 
+        grid-area: sessions-3;
+        display: flex;
+        align-items: flex-end; 
+        padding: 0 15px 50px 50px;
+    }
+      
+      .sessions-4 { 
+        grid-area: sessions-4;
+        display: flex;
+        align-items: flex-end; 
+        padding: 0 15px 50px 50px;
+    }
+      
+      .sessions-5 { 
+        grid-area: sessions-5;
+        display: flex;
+        align-items: flex-end; 
+        
+    }
+      
+}
